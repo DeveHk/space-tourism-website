@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/starter-code/Styles/reset.css" />
+    <link rel="stylesheet" href="/starter-code/Styles/destination-style.css" />
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <div class="description" style="display: none">destination</div>
+    <header>
+      <div>
+        <hr />
+      </div>
+      <nav>
+        <a href="/starter-code/index.html" class="navLink"
+          ><span class="navL">00</span> HOME</a
+        >
+        <a href="/starter-code/destination.html" class="navLink"
+          ><span class="navL">01</span> DESTINATION</a
+        >
+        <a href="/starter-code/crew.html" class="navLink"
+          ><span class="navL">02</span> CREW</a
+        >
+        <a href="#" class="navLink"><span class="navL">03</span> TECHNOLOGY</a>
+      </nav>
+    </header>
+    <section>
+      <h1><span class="planetDes">01</span> Pick your destination</h1>
+      <div class="content pc">
+        <div class="planetImg">
+          <img src="/starter-code/assets/destination/image-moon.webp" alt="" />
+        </div>
+        <div class="planetPanel">
+          <nav class="planetNav">
+            <a href="#" id="planet1" class="activeNavLink pl">Moon</a>
+            <a href="#" id="planet2" class="pl">Mars</a>
+            <a href="#" id="planet3" class="pl"> Europa</a>
+            <a href="#" id="planet4" class="pl">Titan</a>
+          </nav>
+          <div class="planettitle">Moon</div>
+          <div class="planetContent">
+            See our planet as you’ve never seen it before. A perfect relaxing
+            trip away to help regain perspective and come back refreshed. While
+            you’re there, take in some history by visiting the Luna 2 and Apollo
+            11 landing sites.
+          </div>
+          <div class="planetData">
+            <div class="planetDis">
+              <span>Avg. distance </span> <br />
+              <span class="planetNumber">384,400 km</span>
+            </div>
+            <div class="planetTravelTime">
+              <span> Est. travel time </span><br />
+              <span class="planetNumber">3 days</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="/starter-code/JSaction/app.js"></script>
+  </body>
+</html>

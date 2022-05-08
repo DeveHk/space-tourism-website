@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;500&family=Bellefair&family=Rubik:ital,wght@1,300&display=swap');
+body{
+    color:#FFFFFF;
+    height: 100vh;
+    background:  url("/starter-code/assets/home/background-home-desktop.jpg");
+    background-size: cover; 
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+/*To create Left aligned navigation bar*/
+header{
+    display: flex;
+}
+header>div{
+    padding-top:48px;
+    width: 40%;
+}
+header>div>hr{
+    position: relative;
+    left: 20%;
+    z-index: 5;
+    width: 73%;
+    background-color: #ffffff90;
+    border: none;
+    height: 0.1px;
+}
+nav{
+    display: flex;
+    height: 70px;
+    width: 60%;
+    margin-top: 20px;
+    background-color: #9797975b;
+    backdrop-filter: blur(10px);
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 20px 0px 20px;
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+nav a{
+    height: 60%;
+    margin-top:30px;
+    transition: border-bottom 0.2s;
+}
+.activeNavLink{
+    border-bottom: solid 5px #FFFFFF;
+    box-sizing: border-box;
+}
+nav a:hover{
+    border-bottom: solid 5px #ffffff72;
+        box-sizing: border-box;
+    
+}
+.navL{
+    font-weight: 700;
+}
+
+/*main content section formatting*/
+section{
+    height: 30vh;
+    padding: 10%;
+    display: flex;
+    padding-top: 300px;
+    justify-content: space-between;
+    
+}
+/*information card format*/
+#info{
+    width: 400px;
+    margin-right: 100px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+#Subtitle{
+    font-size: 2.2em;
+    font-variant-caps: all-petite-caps;
+    letter-spacing: 3px;
+
+}
+#title{
+    font-weight: 100;
+    font-size: 180px;
+    font-family: 'Bellefair', serif;
+    font-variant-caps: all-petite-caps;
+    margin-bottom: 20px;
+}
+#content{
+    line-height: 25px;
+}
+
+/*explore button format*/
+#explore {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: solid 50px transparent;
+}
+#explore div{
+   
+    color: #0B0D17;
+    width: 250px;
+    height: 250px;
+    font-family: 'Bellefair', serif;
+    font-variant-caps: all-petite-caps;
+    font-size: 42px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+#explore:hover{
+    transition: border 0.2s ease-in;
+    border: solid 50px #ffffff67;
+
+}
+
+
+
