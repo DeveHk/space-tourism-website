@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;500&family=Bellefair&family=Rubik:ital,wght@1,300&display=swap');
+
+body {
+    color: #FFFFFF;
+    height: 100vh;
+    background: url("/starter-code/assets/technology/background-technology-desktop.jpg");
+    background-size: cover;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+/*To create Left aligned navigation bar*/
+header {
+    display: flex;
+}
+
+header>div {
+    padding-top: 48px;
+    width: 40%;
+}
+
+header>div>hr {
+    position: relative;
+    left: 20%;
+    z-index: 5;
+    width: 73%;
+    background-color: #ffffff90;
+    border: none;
+    height: 0.1px;
+}
+
+nav {
+    display: flex;
+    height: 70px;
+    width: 60%;
+    margin-top: 20px;
+    background-color: #9797975b;
+    backdrop-filter: blur(10px);
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 20px 0px 20px;
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+
+nav a {
+    height: 60%;
+    margin-top: 30px;
+    transition: border-bottom 0.2s;
+}
+
+.activeNavLink {
+    color: #FFFFFF;
+    border-bottom: solid 5px #FFFFFF;
+    box-sizing: border-box;
+}
+
+nav a:hover {
+    border-bottom: solid 5px #ffffff72;
+    box-sizing: border-box;
+
+}
+
+.navL {
+    font-weight: 700;
+}
+
+/*Section Formatting*/
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    padding-bottom: 0px;
+    padding-top: 3.5%;
+    padding-right: 0;
+}
+
+section h1 {
+    font-size: 2.2em;
+    font-variant-caps: all-petite-caps;
+    letter-spacing: 3px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+}
+
+section h1 span {
+    font-weight: 500;
+    color: #ffffff6c;
+}
+
+
+
+/*content formatting*/
+.content {
+    height: 600px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.technologyPanel {
+    width: 500px;
+}
+
+.technologySubtitle {
+    font-size: 35px;
+    font-variant-caps: all-petite-caps;
+    letter-spacing: 8px;
+    font-weight: 300;
+    color: #ffffffb2;
+}
+
+.technologyTitle {
+    font-weight: 100;
+    font-size: 65px;
+    font-family: 'Bellefair', serif;
+    font-variant-caps: all-petite-caps;
+    margin-bottom: 20px;
+}
+
+.technologyContent {
+    line-height: 25px;
+    font-weight: 100;
+    letter-spacing: 1.2px;
+    word-spacing: 1.2px;
+    padding-bottom: 30px;
+    margin-right: 100px;
+    border-bottom: solid 1px #ffffff91;
+}
+
+/*technology nav formattting*/
+.technologyNav {
+    background-color: transparent;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 20px;
+    height: 400px;
+    width: 100px;
+    backdrop-filter: blur(0px);
+}
+
+.technologyNavItem {
+    height: 100px;
+    width: 100px;
+    background-color: transparent;
+    border: solid #ffffff54 2px;
+    color: #ffffff5e;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.technologyNavItem:hover {
+    color:#FFFFFF;
+border: solid #ffffff 2.5px;
+}
+
+.technologyNavItemActive {
+    background-color: #ffffff;
+    color: #0B0D17;
+}
+
+/*image formatting*/
+.technologyImg img {
+    height: 650px;
+}

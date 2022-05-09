@@ -106,7 +106,7 @@ for (let i = 0; i < crewNavs.length; i++){
     crewNavs[i].addEventListener("click",
         (e) => {
             e.preventDefault()
-             for (let j = 0; j < navL.length; j++){
+             for (let j = 0; j < crewNavs.length; j++){
                 crewNavs[j].classList.remove("crewNavItemActive")
             }
             crewNavs[i].classList.add("crewNavItemActive")
@@ -118,6 +118,46 @@ for (let i = 0; i < crewNavs.length; i++){
                 pilot()
             else if (i==3)
                 engineer()   
+    }
+    )
+}
+/*CODE FOR TECHNOLOGY PAGE*/////////////////////////////////////
+let techs=document.querySelector(".pccc")
+let techNavs = document.querySelectorAll(".plll")
+
+function LV() {
+    console.log(1)
+    techs.children[1].children[1].innerText = "LAUNCH VEHICLE"
+    techs.children[1].children[2].innerText="A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!"
+    techs.children[2].innerHTML='<img src="/starter-code/assets/technology/image-launch-vehicle-portrait.jpg"  alt="" />'
+}
+
+function SP() {
+    console.log(2)
+    techs.children[1].children[1].innerText = "SPACEPORT"
+    techs.children[1].children[2].innerText="A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch."
+    techs.children[2].innerHTML='<img src="/starter-code/assets/technology/image-spaceport-portrait.jpg"  alt="" />'
+}
+function SC() {
+    console.log(3)
+    techs.children[1].children[1].innerText = "SPACE CAPSULE"
+    techs.children[1].children[2].innerText="A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained."
+    techs.children[2].innerHTML = '<img src="/starter-code/assets/technology/image-space-capsule-portrait.jpg"  alt="" />'
+}
+for (let i = 0; i < techNavs.length; i++){
+    techNavs[i].addEventListener("click",
+        (e) => {
+            e.preventDefault()
+             for (let j = 0; j < techNavs.length; j++){
+                techNavs[j].classList.remove("technologyNavItemActive")
+            }
+            techNavs[i].classList.add("technologyNavItemActive")
+            if (i==0)
+                LV()
+            else if (i==1)
+                SP()
+            else if (i==2)
+                SC() 
     }
     )
 }
