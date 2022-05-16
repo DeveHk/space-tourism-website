@@ -1,18 +1,25 @@
 /*CODE FOR SUPER NAVBAR*//////////////////////////////////////////
-let navL = document.querySelectorAll(".navLink")
-let activePage = document.querySelector(".description")
-if (activePage.innerText == "index") {
-    navL[0].classList.add("activeNavLink")
-}
-else if (activePage.innerText == "destination") {
-    navL[1].classList.add("activeNavLink")
-}
-else if (activePage.innerText == "crew") {
-    navL[2].classList.add("activeNavLink")
-}
-else if (activePage.innerText == "technology") {
-    navL[3].classList.add("activeNavLink")
-}
+// let navL = document.querySelectorAll(".navLink")
+// let navLn=document.querySelectorAll(".navLink-n")
+// let activePage = document.querySelector(".description")
+// if (activePage.innerText == "index") {
+//     navL[0].classList.add("activeNavLink")
+//     navLn[0].classList.add("activeNavLink-n")
+    
+// }
+// else if (activePage.innerText == "destination") {
+//     navL[1].classList.add("activeNavLink")
+//     navLn[1].classList.add("activeNavLink-n")
+// }
+// else if (activePage.innerText == "crew") {
+//     navL[2].classList.add("activeNavLink")
+//     navLn[2].classList.add("activeNavLink-n")
+// }
+// else if (activePage.innerText == "technology") {
+//     navL[3].classList.add("activeNavLink")
+//     navLn[3].classList.add("activeNavLink-n")
+//     console.log("TTTTT")
+// }
 
 
 /*CODE FOR DESTINATION PAGE*/////////////////////////////////////
@@ -70,37 +77,37 @@ for (let i = 0; i < planetNavs.length; i++){
     )
 }
 /*CODE FOR CREW PAGE*/////////////////////////////////////
-let crews=document.querySelector(".pcc")
+let crews=document.querySelectorAll(".pcc")
 let crewNavs = document.querySelectorAll(".pll")
 
-function commander() {
+function commander(im=1,con=0,lin=0) {
     console.log(1)
-     crews.children[1].innerHTML = "\n          <img src=\"/assets/crew/image-douglas-hurley.webp\" alt=\"\">\n        "
-    crews.children[0].children[0].innerText = "commander"
-    crews.children[0].children[1].innerText = "Douglas Hurley"
-    crews.children[0].children[2].innerText = "Douglas Gerald Hurley is an American engineer, former Marine Corps  pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2."
+     crews[con].children[im].innerHTML = "\n          <img src=\"/assets/crew/image-douglas-hurley.webp\" alt=\"\">\n        "
+    crews[con].children[con].children[lin+0].innerText = "commander"
+    crews[con].children[con].children[lin+1].innerText = "Douglas Hurley"
+    crews[con].children[con].children[lin+2].innerText = "Douglas Gerald Hurley is an American engineer, former Marine Corps  pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2."
 }
 
-function specialist() {
+function specialist(im=1,con=0,lin=0) {
     console.log(2)
-    crews.children[1].innerHTML = "\n          <img src=\"/assets/crew/image-mark-shuttleworth.webp\" alt=\"\">\n  "
-    crews.children[0].children[0].innerText = "Mission Specialist "
-    crews.children[0].children[1].innerText = "MARK SHUTTLEWORTH"
-    crews.children[0].children[2].innerText = "Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist."
+    crews[con].children[im].innerHTML = "\n          <img src=\"/assets/crew/image-mark-shuttleworth.webp\" alt=\"\">\n  "
+    crews[con].children[con].children[lin+0].innerText = "Mission Specialist "
+    crews[con].children[con].children[lin+1].innerText = "MARK SHUTTLEWORTH"
+    crews[con].children[con].children[lin+2].innerText = "Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist."
 }
-function pilot() {
+function pilot(im=1,con=0,lin=0) {
     console.log(3)
-    crews.children[1].innerHTML = "\n          <img src=\"/assets/crew/image-victor-glover.webp\" alt=\"\">\n  "
-    crews.children[0].children[0].innerText = "PILOT"
-    crews.children[0].children[1].innerText = "Victor Glover"
-    crews.children[0].children[2].innerText = "Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer. "
+    crews[con].children[im].innerHTML = "\n          <img src=\"/assets/crew/image-victor-glover.webp\" alt=\"\">\n  "
+    crews[con].children[con].children[lin+0].innerText = "PILOT"
+    crews[con].children[con].children[lin+1].innerText = "Victor Glover"
+    crews[con].children[con].children[lin+2].innerText = "Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer. "
 }
-function engineer() {
+function engineer(im=1,con=0,lin=0) {
     console.log(4)
-    crews.children[1].innerHTML = "\n          <img src=\"/assets/crew/image-anousheh-ansari.webp\" alt=\"\">\n  "
-    crews.children[0].children[0].innerText = "Flight Engineer"
-    crews.children[0].children[1].innerText = "Anousheh Ansari"
-    crews.children[0].children[2].innerText = "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space."
+    crews[con].children[im].innerHTML = "\n          <img src=\"/assets/crew/image-anousheh-ansari.webp\" alt=\"\">\n  "
+    crews[con].children[con].children[lin+0].innerText = "Flight Engineer"
+    crews[con].children[con].children[lin+1].innerText = "Anousheh Ansari"
+    crews[con].children[con].children[lin+2].innerText = "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space."
 }
 for (let i = 0; i < crewNavs.length; i++){
     crewNavs[i].addEventListener("click",
@@ -117,7 +124,15 @@ for (let i = 0; i < crewNavs.length; i++){
             else if (i==2)
                 pilot()
             else if (i==3)
-                engineer()   
+                engineer() 
+            else if (i==4)
+                commander(0,1,1)
+            else if (i==5)
+                specialist(0,1,1)
+            else if (i==6)
+                pilot(0,1,1)
+            else if (i==7)
+                engineer(0,1,1) 
     }
     )
 }
@@ -188,4 +203,24 @@ for (let i = 0; i < techNavs.length; i++){
     }
     )
 }
+/*To implement Hamburger menu*/
+let ham = document.querySelector(".hmb")
+let hnav = document.querySelector(".hmnn")
+
+
+ham.addEventListener("click", () => {
+    if (ham.classList.contains("hmbA")) {
+        ham.classList.remove("hmbA")
+        hnav.classList.remove("hmnA")
+        ham.innerHTML = "<img src=\"/assets/shared/icon-hamburger.svg\" alt=\"\" >"   
+    }
+    else {
+        ham.innerHTML = "<img src=\"/assets/shared/icon-close.svg\" alt=\"\" >"
+        ham.classList.add("hmbA")
+        hnav.classList.add("hmnA")
+
+    }
+})
+
+
 

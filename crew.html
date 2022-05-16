@@ -22,14 +22,32 @@
         <img src="/assets/shared/logo.svg" alt="" />
         <hr class="notOnTab" />
       </div>
-      <nav>
+      <div class="hmb">
+        <img src="/assets/shared/icon-hamburger.svg" alt="" />
+      </div>
+
+      <div class="hmnn">
+        <a href="/index.html" class="navLink-n"
+          ><span class="navL">00</span> HOME</a
+        >
+        <a href="/destination.html" class="navLink-n"
+          ><span class="navL">01</span> DESTINATION</a
+        >
+        <a href="/crew.html" class="navLink-n" id="activeNavLink-n"
+          ><span class="navL">02</span> CREW</a
+        >
+        <a href="/technology.html" class="navLink-n"
+          ><span class="navL">03</span> TECHNOLOGY</a
+        >
+      </div>
+      <nav class="hmn">
         <a href="/index.html" class="navLink"
           ><span class="navL">00</span> HOME</a
         >
         <a href="/destination.html" class="navLink"
           ><span class="navL">01</span> DESTINATION</a
         >
-        <a href="/crew.html" class="navLink"
+        <a href="/crew.html" class="navLink activeNavLink"
           ><span class="navL">02</span> CREW</a
         >
         <a href="/technology.html" class="navLink"
@@ -39,7 +57,7 @@
     </header>
     <section>
       <h1><span class="crewDes">02</span> Meet your crew</h1>
-      <div class="content pcc">
+      <div class="content onCom pcc">
         <div class="crewPanel">
           <div class="crewSubtitle">commander</div>
           <div class="crewTitle">Douglas Hurley</div>
@@ -57,6 +75,27 @@
         </div>
         <div class="crewImg">
           <img src="/assets/crew/image-douglas-hurley.webp" alt="" />
+        </div>
+      </div>
+      <div class="content onMob pcc">
+        <div class="crewImg">
+          <img src="/assets/crew/image-douglas-hurley.webp" alt="" />
+        </div>
+
+        <div class="crewPanel">
+          <nav class="crewNav">
+            <div class="crewNavItem crewNavItemActive pll"></div>
+            <div class="crewNavItem pll"></div>
+            <div class="crewNavItem pll"></div>
+            <div class="crewNavItem pll"></div>
+          </nav>
+          <div class="crewSubtitle">commander</div>
+          <div class="crewTitle">Douglas Hurley</div>
+          <div class="crewContent">
+            Douglas Gerald Hurley is an American engineer, former Marine Corps
+            pilot and former NASA astronaut. He launched into space for the
+            third time as commander of Crew Dragon Demo-2.
+          </div>
         </div>
       </div>
     </section>
