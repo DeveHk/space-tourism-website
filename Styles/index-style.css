@@ -2,7 +2,7 @@
 body{
     color:#FFFFFF;
     height: 100vh;
-    background:  url("/starter-code/assets/home/background-home-desktop.jpg");
+    background:  url("/assets/home/background-home-desktop.jpg");
     background-size: cover; 
     font-family: 'Barlow Condensed', sans-serif;
 }
@@ -12,12 +12,15 @@ header{
     display: flex;
 }
 header>div{
-    padding-top:48px;
+    padding-top:22px;
+    padding-left: 20px;
     width: 40%;
+    display: flex;
+    align-items: center;
 }
 header>div>hr{
     position: relative;
-    left: 20%;
+    left: 15%;
     z-index: 5;
     width: 73%;
     background-color: #ffffff90;
@@ -37,6 +40,7 @@ nav{
     letter-spacing: 3px;
     font-weight: 300;
 }
+
 nav a{
     height: 60%;
     margin-top:30px;
@@ -64,13 +68,17 @@ section{
     justify-content: space-between;
     
 }
+
 /*information card format*/
 #info{
+    display: flex;
+    flex-direction: column;
     width: 400px;
     margin-right: 100px;
     font-weight: 100;
     letter-spacing: 2px;
 }
+
 #Subtitle{
     font-size: 2.2em;
     font-variant-caps: all-petite-caps;
@@ -114,6 +122,34 @@ section{
     border: solid 50px #ffffff67;
 
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background-image: url(/assets/home/background-home-tablet.jpg);
+        background-position: center;
+    }
 
+    .notOnTab {
+        display: none;
+    }
 
+    nav {
+        margin-top: 0;
+        height: 85px;
+        width: 80%;
+    }
 
+    section {
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+        padding-top: 50px;
+        align-items: center;
+    }
+
+    #info {
+
+        align-items: center;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+}

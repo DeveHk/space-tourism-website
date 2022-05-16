@@ -20,7 +20,7 @@ let planets=document.querySelector(".pc")
 let planetNavs = document.querySelectorAll(".pl")
 function moon() {
     console.log("MOON")
-    planets.children[0].innerHTML = "\n          <img src=\"/starter-code/assets/destination/image-moon.webp\" alt=\"\">\n        "
+    planets.children[0].innerHTML = "\n          <img src=\"/assets/destination/image-moon.webp\" alt=\"\">\n        "
     planets.children[1].children[1].innerText = "MOON"
     planets.children[1].children[2].innerText = "See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites."
     planets.children[1].children[3].children[0].children[2].innerText = "384,400 km"
@@ -28,7 +28,7 @@ function moon() {
 }
 function mars() {
     console.log("MARS")
-    planets.children[0].innerHTML = "\n          <img src=\"/starter-code/assets/destination/image-mars.webp\" alt=\"\">\n        "
+    planets.children[0].innerHTML = "\n          <img src=\"/assets/destination/image-mars.webp\" alt=\"\">\n        "
     planets.children[1].children[1].innerText = "MARS"
     planets.children[1].children[2].innerText = "Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!"
     planets.children[1].children[3].children[0].children[2].innerText = "225 MIL. km"
@@ -36,7 +36,7 @@ function mars() {
 }
 function europa() {
     console.log("EUROPA")
-    planets.children[0].innerHTML = "\n          <img src=\"/starter-code/assets/destination/image-europa.webp\" alt=\"\">\n        "
+    planets.children[0].innerHTML = "\n          <img src=\"/assets/destination/image-europa.webp\" alt=\"\">\n        "
     planets.children[1].children[1].innerText = "EUROPA"
     planets.children[1].children[2].innerText = "The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin."
     planets.children[1].children[3].children[0].children[2].innerText = "628 MIL. km"
@@ -44,7 +44,7 @@ function europa() {
 }
 function titan() {
     console.log("TITAN")
-    planets.children[0].innerHTML = "\n          <img src=\"/starter-code/assets/destination/image-titan.webp\" alt=\"\">\n        "
+    planets.children[0].innerHTML = "\n          <img src=\"/assets/destination/image-titan.webp\" alt=\"\">\n        "
     planets.children[1].children[1].innerText = "TITAN"
     planets.children[1].children[2].innerText = "The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn."
     planets.children[1].children[3].children[0].children[2].innerText = "1.6 BIL. km"
@@ -75,7 +75,7 @@ let crewNavs = document.querySelectorAll(".pll")
 
 function commander() {
     console.log(1)
-     crews.children[1].innerHTML = "\n          <img src=\"/starter-code/assets/crew/image-douglas-hurley.webp\" alt=\"\">\n        "
+     crews.children[1].innerHTML = "\n          <img src=\"/assets/crew/image-douglas-hurley.webp\" alt=\"\">\n        "
     crews.children[0].children[0].innerText = "commander"
     crews.children[0].children[1].innerText = "Douglas Hurley"
     crews.children[0].children[2].innerText = "Douglas Gerald Hurley is an American engineer, former Marine Corps  pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2."
@@ -83,21 +83,21 @@ function commander() {
 
 function specialist() {
     console.log(2)
-    crews.children[1].innerHTML = "\n          <img src=\"/starter-code/assets/crew/image-mark-shuttleworth.webp\" alt=\"\">\n  "
+    crews.children[1].innerHTML = "\n          <img src=\"/assets/crew/image-mark-shuttleworth.webp\" alt=\"\">\n  "
     crews.children[0].children[0].innerText = "Mission Specialist "
     crews.children[0].children[1].innerText = "MARK SHUTTLEWORTH"
     crews.children[0].children[2].innerText = "Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist."
 }
 function pilot() {
     console.log(3)
-    crews.children[1].innerHTML = "\n          <img src=\"/starter-code/assets/crew/image-victor-glover.webp\" alt=\"\">\n  "
+    crews.children[1].innerHTML = "\n          <img src=\"/assets/crew/image-victor-glover.webp\" alt=\"\">\n  "
     crews.children[0].children[0].innerText = "PILOT"
     crews.children[0].children[1].innerText = "Victor Glover"
     crews.children[0].children[2].innerText = "Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer. "
 }
 function engineer() {
     console.log(4)
-    crews.children[1].innerHTML = "\n          <img src=\"/starter-code/assets/crew/image-anousheh-ansari.webp\" alt=\"\">\n  "
+    crews.children[1].innerHTML = "\n          <img src=\"/assets/crew/image-anousheh-ansari.webp\" alt=\"\">\n  "
     crews.children[0].children[0].innerText = "Flight Engineer"
     crews.children[0].children[1].innerText = "Anousheh Ansari"
     crews.children[0].children[2].innerText = "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space."
@@ -124,25 +124,46 @@ for (let i = 0; i < crewNavs.length; i++){
 /*CODE FOR TECHNOLOGY PAGE*/////////////////////////////////////
 let techs=document.querySelector(".pccc")
 let techNavs = document.querySelectorAll(".plll")
+let techst=document.querySelector(".pccct")
+
+function LVt() {
+    console.log(1)
+    techst.children[2].children[1].innerText = "LAUNCH VEHICLE"
+    techst.children[2].children[2].innerText="A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!"
+    techst.children[0].innerHTML='<img src="/assets/technology/image-launch-vehicle-landscape.jpg"  alt="" />'
+}
+
+function SPt() {
+    console.log(2)
+    techst.children[2].children[1].innerText = "SPACEPORT"
+    techst.children[2].children[2].innerText="A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch."
+    techst.children[0].innerHTML='<img src="/assets/technology/image-spaceport-landscape.jpg"  alt="" />'
+}
+function SCt() {
+    console.log(3)
+    techst.children[2].children[1].innerText = "SPACE CAPSULE"
+    techst.children[2].children[2].innerText="A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained."
+    techst.children[0].innerHTML = '<img src="/assets/technology/image-space-capsule-landscape.jpg"  alt="" />'
+}
 
 function LV() {
     console.log(1)
     techs.children[1].children[1].innerText = "LAUNCH VEHICLE"
     techs.children[1].children[2].innerText="A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!"
-    techs.children[2].innerHTML='<img src="/starter-code/assets/technology/image-launch-vehicle-portrait.jpg"  alt="" />'
+    techs.children[2].innerHTML='<img src="/assets/technology/image-launch-vehicle-portrait.jpg"  alt="" />'
 }
 
 function SP() {
     console.log(2)
     techs.children[1].children[1].innerText = "SPACEPORT"
     techs.children[1].children[2].innerText="A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch."
-    techs.children[2].innerHTML='<img src="/starter-code/assets/technology/image-spaceport-portrait.jpg"  alt="" />'
+    techs.children[2].innerHTML='<img src="/assets/technology/image-spaceport-portrait.jpg"  alt="" />'
 }
 function SC() {
     console.log(3)
     techs.children[1].children[1].innerText = "SPACE CAPSULE"
     techs.children[1].children[2].innerText="A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained."
-    techs.children[2].innerHTML = '<img src="/starter-code/assets/technology/image-space-capsule-portrait.jpg"  alt="" />'
+    techs.children[2].innerHTML = '<img src="/assets/technology/image-space-capsule-portrait.jpg"  alt="" />'
 }
 for (let i = 0; i < techNavs.length; i++){
     techNavs[i].addEventListener("click",
@@ -158,6 +179,12 @@ for (let i = 0; i < techNavs.length; i++){
                 SP()
             else if (i==2)
                 SC() 
+            else if (i==3)
+                LVt()
+            else if (i==4)
+                SPt()
+            else if (i==5)
+                SCt() 
     }
     )
 }

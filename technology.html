@@ -10,8 +10,8 @@
       sizes="32x32"
       href="./assets/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="/starter-code/Styles/reset.css" />
-    <link rel="stylesheet" href="/starter-code/Styles/technology-style.css" />
+    <link rel="stylesheet" href="/Styles/reset.css" />
+    <link rel="stylesheet" href="/Styles/technology-style.css" />
 
     <title>Frontend Mentor | Space tourism website</title>
   </head>
@@ -19,26 +19,27 @@
     <div class="description" style="display: none">technology</div>
     <header>
       <div>
-        <hr />
+        <img src="/assets/shared/logo.svg" alt="" />
+        <hr class="notOnTab" />
       </div>
       <nav>
-        <a href="/starter-code/index.html" class="navLink"
+        <a href="/index.html" class="navLink"
           ><span class="navL">00</span> HOME</a
         >
-        <a href="/starter-code/destination.html" class="navLink"
+        <a href="/destination.html" class="navLink"
           ><span class="navL">01</span> DESTINATION</a
         >
-        <a href="/starter-code/crew.html" class="navLink"
+        <a href="/crew.html" class="navLink"
           ><span class="navL">02</span> CREW</a
         >
-        <a href="/starter-code/technology.html" class="navLink"
+        <a href="/technology.html" class="navLink"
           ><span class="navL">03</span> TECHNOLOGY</a
         >
       </nav>
     </header>
     <section>
       <h1><span class="technologyDes">03</span> SPACE LAUNCH 101</h1>
-      <div class="content pccc">
+      <div class="content1 pccc">
         <nav class="technologyNav">
           <div class="technologyNavItem technologyNavItemActive plll">1</div>
           <div class="technologyNavItem plll">2</div>
@@ -57,12 +58,36 @@
         </div>
         <div class="technologyImg">
           <img
-            src="/starter-code/assets/technology/image-launch-vehicle-portrait.jpg"
+            src="/assets/technology/image-launch-vehicle-portrait.jpg"
             alt=""
           />
         </div>
       </div>
+      <div class="content2 pccct">
+        <div class="technologyImg">
+          <img
+            src="/assets/technology/image-launch-vehicle-landscape.jpg"
+            alt=""
+          />
+        </div>
+        <nav class="technologyNav">
+          <div class="technologyNavItem technologyNavItemActive plll">1</div>
+          <div class="technologyNavItem plll">2</div>
+          <div class="technologyNavItem plll">3</div>
+        </nav>
+        <div class="technologyPanel">
+          <div class="technologySubtitle">THE TERMINOLOGY…</div>
+          <div class="technologyTitle">LAUNCH VEHICLE</div>
+          <div class="technologyContent">
+            A launch vehicle or carrier rocket is a rocket-propelled vehicle
+            used to carry a payload from Earth's surface to space, usually to
+            Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful
+            in operation. Standing 150 metres tall, it's quite an awe-inspiring
+            sight on the launch pad!
+          </div>
+        </div>
+      </div>
     </section>
-    <script src="/starter-code/JSaction/app.js"></script>
+    <script src="/JSaction/app.js"></script>
   </body>
 </html>

@@ -3,7 +3,7 @@
 body {
     color: #FFFFFF;
     height: 100vh;
-    background: url("/starter-code/assets/technology/background-technology-desktop.jpg");
+    background: url("/assets/crew/background-crew-desktop.jpg");
     background-size: cover;
     font-family: 'Barlow Condensed', sans-serif;
 }
@@ -14,13 +14,16 @@ header {
 }
 
 header>div {
-    padding-top: 48px;
+    padding-top: 22px;
+    padding-left: 20px;
     width: 40%;
+    display: flex;
+    align-items: center;
 }
 
 header>div>hr {
     position: relative;
-    left: 20%;
+    left: 15%;
     z-index: 5;
     width: 73%;
     background-color: #ffffff90;
@@ -69,9 +72,8 @@ section {
     display: flex;
     flex-direction: column;
     padding: 10%;
-    padding-bottom: 0px;
-    padding-top: 3.5%;
-    padding-right: 0;
+    padding-bottom: 0;
+    padding-top: 3.25%;
 }
 
 section h1 {
@@ -97,22 +99,20 @@ section h1 span {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    
+    padding: 0 20px 0 20px;
 }
 
-.technologyPanel {
+.crewPanel {
     width: 500px;
 }
-
-.technologySubtitle {
+.crewSubtitle{
     font-size: 35px;
-    font-variant-caps: all-petite-caps;
-    letter-spacing: 8px;
-    font-weight: 300;
-    color: #ffffffb2;
+        font-variant-caps: all-petite-caps;
+        letter-spacing: 8px;
+        font-weight: 300;
+        color: #ffffffb2;
 }
-
-.technologyTitle {
+.crewTitle {
     font-weight: 100;
     font-size: 65px;
     font-family: 'Bellefair', serif;
@@ -120,51 +120,73 @@ section h1 span {
     margin-bottom: 20px;
 }
 
-.technologyContent {
+.crewContent {
     line-height: 25px;
     font-weight: 100;
     letter-spacing: 1.2px;
     word-spacing: 1.2px;
     padding-bottom: 30px;
-    margin-right: 100px;
     border-bottom: solid 1px #ffffff91;
 }
 
-/*technology nav formattting*/
-.technologyNav {
+/*Crew nav formattting*/
+.crewNav {
     background-color: transparent;
-    flex-direction: column;
-    padding-left: 30px;
-    padding-right: 20px;
-    height: 400px;
-    width: 100px;
-    backdrop-filter: blur(0px);
+    padding: 0;
+    height: 20px;
+    width: 200px;
 }
-
-.technologyNavItem {
-    height: 100px;
-    width: 100px;
-    background-color: transparent;
-    border: solid #ffffff54 2px;
-    color: #ffffff5e;
+.crewNavItem{
+    height: 20px;
+    width: 20px;
+    background-color: #ffffff2f;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
 }
-
-.technologyNavItem:hover {
-    color:#FFFFFF;
-border: solid #ffffff 2.5px;
+.crewNavItem:hover {
+    background-color: #ffffff80;
 }
-
-.technologyNavItemActive {
-    background-color: #ffffff;
-    color: #0B0D17;
+.crewNavItemActive{
+   background-color: #FFFFFF;
 }
-
 /*image formatting*/
-.technologyImg img {
-    height: 650px;
+.crewImg img{
+    height: 680px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background-image: url("/assets/crew/background-crew-tablet.jpg");
+        background-position: center;
+    }
+
+    .notOnTab {
+        display: none;
+    }
+
+    nav {
+        margin-top: 0;
+        height: 85px;
+        width: 80%;
+    }
+
+    section {
+        padding: 20px 50px 0 20px;
+    }
+    .content, .crewPanel, .crewContent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border: none;
+    }
+    .content{
+        height: auto;
+    }
+
+    .crewImg img {
+        padding-top: 25px;
+        height: 430px;
+        
+    }
+
+   
 }

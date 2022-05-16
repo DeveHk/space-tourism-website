@@ -3,7 +3,7 @@
 body {
     color: #FFFFFF;
     height: 100vh;
-    background: url("/starter-code/assets/destination/background-destination-desktop.jpg");
+    background: url("/assets/destination/background-destination-desktop.jpg");
     background-size: cover;
     font-family: 'Barlow Condensed', sans-serif;
 }
@@ -14,13 +14,16 @@ header {
 }
 
 header>div {
-    padding-top: 48px;
+    padding-top: 22px;
+    padding-left: 20px;
     width: 40%;
+    display: flex;
+    align-items: center;
 }
 
 header>div>hr {
     position: relative;
-    left: 20%;
+    left: 15%;
     z-index: 5;
     width: 73%;
     background-color: #ffffff90;
@@ -131,4 +134,63 @@ section h1 span{
 .planetNumber{
     font-weight: 300;
     font-size: 35px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background-image: url("/assets/destination/background-destination-tablet.jpg");
+        background-position: center;
+    }
+
+    .notOnTab {
+        display: none;
+    }
+
+    nav {
+        margin-top: 0;
+        height: 85px;
+        width: 80%;
+    }
+    section {
+            padding: 20px 50px 0 20px;
+        }
+    .content {
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    section img{
+        width: 60%;
+    }
+
+    .planetImg{
+        display: flex;
+        justify-content: center;
+    }
+    .content, .planetPanel{
+        display: flex;
+        flex-direction: column;
+        padding-top: 2px;
+        align-items: center;
+    }
+    .planetData{
+        display: flex;
+        align-items: space-around;
+        width: 400px;
+        padding-bottom: 0;
+    }
+   .planetNav{
+       height: 50px;
+       padding: 0;
+   }
+   .pl{
+       margin: 0;
+   }
+
+    #info {
+
+        align-items: center;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
 }
