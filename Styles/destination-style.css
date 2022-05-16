@@ -194,3 +194,72 @@ section h1 span{
         margin-bottom: 20px;
     }
 }
+.hmb {
+    display: none;
+}
+@media(max-width: 600px) {
+    body {
+        background-image: url(/assets/destination/background-destination-mobile.jpg);
+        background-position: top;
+        height: auto;
+    }
+
+    header {
+        justify-content: space-between;
+        height: 40px;
+        padding: 20px 10px 0px 10px;
+    }
+
+    header>div {
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+
+    .hmb {
+        display: flex;
+        position: fixed;
+        right: 10px;
+        height: 40px;
+    }
+
+    .hmn {
+        display: none;
+    }
+
+    section {
+        font-size: 14px;
+    }
+
+    /*explore button format*/
+    #explore {
+        width: 150px;
+        height: 1500px;
+        border-radius: 50%;
+        border: solid 50px transparent;
+    }
+
+    #explore div {
+
+        color: #0B0D17;
+        width: 150px;
+        height: 150px;
+        font-family: 'Bellefair', serif;
+        font-variant-caps: all-petite-caps;
+        font-size: 32px;
+        background-color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+
+    #explore:hover {
+        transition: border 0.2s ease-in;
+        border: solid 50px #ffffff67;
+
+    }
+
+
+
+
+}
