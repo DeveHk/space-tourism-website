@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;500&family=Bellefair&family=Rubik:ital,wght@1,300&display=swap');
 body{
     color:#FFFFFF;
-    height: 100vh;
+    min-height: 100vh;
     background:  url("/assets/home/background-home-desktop.jpg");
     background-size: cover; 
     font-family: 'Barlow Condensed', sans-serif;
@@ -27,12 +27,15 @@ header>div>hr{
     border: none;
     height: 0.1px;
 }
+.hmb{
+    display: none;
+}
 nav{
     display: flex;
     height: 70px;
-    width: 60%;
+    width: 100%;
     margin-top: 20px;
-    background-color: #9797975b;
+    background-color: #9797973f;
     backdrop-filter: blur(10px);
     align-items: center;
     justify-content: space-around;
@@ -87,7 +90,7 @@ section{
 }
 #title{
     font-weight: 100;
-    font-size: 180px;
+    font-size: 10em;
     font-family: 'Bellefair', serif;
     font-variant-caps: all-petite-caps;
     margin-bottom: 20px;
@@ -122,7 +125,7 @@ section{
     border: solid 50px #ffffff67;
 
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
     body {
         background-image: url(/assets/home/background-home-tablet.jpg);
         background-position: center;
@@ -152,4 +155,64 @@ section{
         margin-right: 0px;
         margin-bottom: 20px;
     }
+}
+@media(max-width: 600px){
+    body {
+            background-image: url(/assets/home/background-home-mobile.jpg);
+            background-position: top;
+            height: auto;
+        }
+        header{
+            justify-content: space-between;
+            height: 40px;
+            padding: 20px 10px 0px 10px;
+        }
+        header>div{
+            padding-top: 0px;
+            padding-left: 0px;
+        }
+        .hmb {
+            display: flex;
+            position: fixed;
+            right:10px;
+            height: 40px;
+        }
+        .hmn{
+            display: none;
+        }
+        section{
+font-size: 14px;
+        }
+                /*explore button format*/
+                #explore {
+                    width: 150px;
+                    height: 1500px;
+                    border-radius: 50%;
+                    border: solid 50px transparent;
+                }
+        
+                #explore div {
+        
+                    color: #0B0D17;
+                    width: 150px;
+                    height: 150px;
+                    font-family: 'Bellefair', serif;
+                    font-variant-caps: all-petite-caps;
+                    font-size: 32px;
+                    background-color: #FFFFFF;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                }
+        
+                #explore:hover {
+                    transition: border 0.2s ease-in;
+                    border: solid 50px #ffffff67;
+        
+                }
+        
+        
+    
+        
 }

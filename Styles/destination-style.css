@@ -135,7 +135,7 @@ section h1 span{
     font-weight: 300;
     font-size: 35px;
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
     body {
         background-image: url("/assets/destination/background-destination-tablet.jpg");
         background-position: center;
