@@ -107,7 +107,7 @@ section h1 span{
 }
 .planettitle {
     font-weight: 100;
-    font-size: 150px;
+    font-size: 10em;
     font-family: 'Bellefair', serif;
     font-variant-caps: all-petite-caps;
     margin-bottom: 20px;
@@ -228,8 +228,26 @@ section h1 span{
 
     section {
         font-size: 14px;
+        align-items: center;
+    }
+    section h1{
+        margin-bottom: 10px;
     }
 
+    .planetPanel {
+            width: auto;
+    }
+    .content {
+            height: auto;
+    }
+    .planetData{
+        flex-direction: column;
+        align-items: center;
+    }
+    .planetData div{
+        margin-top:10px;
+        text-align: center;
+    }
     /*explore button format*/
     #explore {
         width: 150px;
