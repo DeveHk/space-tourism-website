@@ -61,7 +61,7 @@ for (let i = 0; i < planetNavs.length; i++){
     planetNavs[i].addEventListener("click",
         (e) => {
             e.preventDefault()
-             for (let j = 0; j < navL.length; j++){
+             for (let j = 0; j < planetNavs.length; j++){
                 planetNavs[j].classList.remove("activeNavLink")
             }
             planetNavs[i].classList.add("activeNavLink")
