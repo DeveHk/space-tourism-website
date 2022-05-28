@@ -51,4 +51,5 @@ The site made purely frontend, in future changes will be made to deelope a backe
 
 - Website - [Harsh Kumar](https://pedantic-boyd-33ab17.netlify.app/index.html)
 - Frontend Mentor - [@DeveHk](https://www.frontendmentor.io/profile/DeveHk)
+- LinkedIn - (https://www.linkedin.com/in/harsh-kumar-b8603922b/)
 - Instagram - [@_itsharshithere_](https://www.instagram.com/_itsharshithere_/)
